@@ -11,11 +11,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    // Add items
+    // Add items here.
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
 
-    // Add items to a vanilla creative menu.
+    // Add items to a vanilla creative tab (PART 1)
     // To add more ingredients, add more entries below the method.
     // To add ingredients to a different tab, create a new method, and
     // change "addItemsToIngredientTab" to something else.
@@ -33,9 +33,9 @@ public class ModItems {
     public static void registerModItems() {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
 
-        // Assign items to a specific creative tab
+        // Add items to a vanilla creative tab (PART 2)
         // To assign ingredients to a different tab, create a new method, and
-        // change "addItemsToIngredientTab" to something else.
+        // change "addItemsToIngredientTab" to something else, and use a different item group.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTab);
     }
 }
