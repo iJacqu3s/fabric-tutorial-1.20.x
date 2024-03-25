@@ -20,6 +20,7 @@ public class ModItems {
      */
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
 
     /*
       Add items to a vanilla creative tab (PART 1).
