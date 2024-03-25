@@ -15,9 +15,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     // Create a new block
+    // "copyof" = Copy block properties from a pre-existing block
+    // "create" = Create block properties from scratch
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
-            // "copyof" = Copy block properties
-            // "create" = Create block properties
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));

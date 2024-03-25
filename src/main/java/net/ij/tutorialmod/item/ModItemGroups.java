@@ -31,6 +31,7 @@ public class ModItemGroups {
                         Add blocks to tabs groups
                          */
                         entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
                         /*
                         You can also add vanilla items
