@@ -1,3 +1,7 @@
 {
-  "parent": "tutorialmod:block/ruby_block"
+  "parent": "tutorialmod:block/ruby_block",
+  "textures": {
+    "all": "tutorialmod:block/ruby_block"
+  }
+
 }

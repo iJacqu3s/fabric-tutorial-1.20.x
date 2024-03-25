@@ -1,0 +1,7 @@
+{
+  "parent": "tutorialmod:block/raw_ruby_block",
+  "textures": {
+    "all": "tutorialmod:block/raw_ruby_block"
+  }
+
+}
