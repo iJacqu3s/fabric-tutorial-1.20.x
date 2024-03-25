@@ -11,14 +11,22 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    // Add items here.
+    /*
+     Add items here.
+     When adding items, remember to do the following:
+     1.) add them to the "en_us.json" file.
+     2.) create a new json file under the models/item folder.
+     3.) place a texture in the texture/item folder.
+     */
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
 
-    // Add items to a vanilla creative tab (PART 1)
-    // To add more ingredients, add more entries below the method.
-    // To add ingredients to a different tab, create a new method, and
-    // change "addItemsToIngredientTab" to something else.
+    /*
+      Add items to a vanilla creative tab (PART 1).
+      To add more ingredients, add more entries below the method.
+      To add ingredients to a different tab, create a new method, and
+      change "addItemsToIngredientTab" to something else.
+     */
     private static void addItemsToIngredientTab(FabricItemGroupEntries entries) {
 
         entries.add(RUBY);
