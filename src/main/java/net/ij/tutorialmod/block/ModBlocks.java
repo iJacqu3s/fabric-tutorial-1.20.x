@@ -22,11 +22,15 @@ public class ModBlocks {
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    // This method registers a block and its item form.
+    // It takes a String name and a Block instance, registers the block item,
+    // and then registers the block itself.
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 
+    // This method registers the block as an item so it can be held in the inventory
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
