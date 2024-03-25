@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.SAPPHIRE);
 
+
                         /*
                         Add blocks to tabs groups
                          */
@@ -39,6 +40,11 @@ public class ModItemGroups {
                         You can also add vanilla items
                          */
                         entries.add(Items.DIAMOND);
+
+                        entries.add(ModItems.RUBY_ORE);
+                        entries.add(ModItems.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModItems.NETHERRACK_RUBY_ORE);
+                        entries.add(ModItems.END_STONE_RUBY_ORE);
 
                     }).build());
 
