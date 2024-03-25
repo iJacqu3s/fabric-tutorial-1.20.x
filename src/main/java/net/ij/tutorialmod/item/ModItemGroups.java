@@ -36,15 +36,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.SAPPHIRE_BLOCK);
 
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModBlocks.END_STONE_RUBY_ORE);
                         /*
                         You can also add vanilla items
                          */
                         entries.add(Items.DIAMOND);
 
-                        entries.add(ModItems.RUBY_ORE);
-                        entries.add(ModItems.DEEPSLATE_RUBY_ORE);
-                        entries.add(ModItems.NETHERRACK_RUBY_ORE);
-                        entries.add(ModItems.END_STONE_RUBY_ORE);
+
 
                     }).build());
 
