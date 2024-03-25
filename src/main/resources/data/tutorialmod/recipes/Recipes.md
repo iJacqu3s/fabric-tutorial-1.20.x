@@ -49,5 +49,8 @@ There are a variety of different types, such as:
 and many more.
 
 Pre-existing minecraft recipes can be found the directory
-``Gradle: net.minecraft-merged-4060f3af86:1.20.1-net.fabricmc.yarn..... / data / minecraft / recipes``
+```
+net\minecraft\minecraft-merged-4060f3af86\1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2\minecraft-merged-4060f3af86-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar!\data\minecraft\recipes
+```
 
+I recommend that you look for the data and assets folders and bookmark them in your IDE for easier access
