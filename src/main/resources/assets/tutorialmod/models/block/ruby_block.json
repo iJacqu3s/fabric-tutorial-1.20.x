@@ -1,5 +1,5 @@
 {
-  "parent": "tutorialmod:block/ruby_block",
+  "parent": "block/cube_all",
   "textures": {
     "all": "tutorialmod:block/ruby_block"
   }
