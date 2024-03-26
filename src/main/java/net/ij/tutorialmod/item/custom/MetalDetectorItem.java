@@ -1,5 +1,6 @@
 package net.ij.tutorialmod.item.custom;
 
+import net.ij.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -56,8 +57,9 @@ public class MetalDetectorItem extends Item {
                 "(" + blockPos.getX() + "," + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
     }
 
+    // Blocks that are detectable can be added to a json file instead of being hardcoded
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
 
     // Add a tooltip to the custom item. Remember to add it to the lang file
