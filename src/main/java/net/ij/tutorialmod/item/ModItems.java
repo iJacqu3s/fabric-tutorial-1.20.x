@@ -34,6 +34,10 @@ public class ModItems {
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings()
             .food(ModFoodComponents.TOMATO)));
 
+    // This is a fuel item. It gets registered as such in the "TutorialMod" class
+    public static final Item COAL_BRIQUETTE = registerItem("coal_briquette", new Item(new FabricItemSettings()));
+
+
     /*
       Add items to a vanilla creative tab (PART 1).
       To add more ingredients, add more entries below the method.
