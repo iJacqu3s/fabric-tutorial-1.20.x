@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.ij.tutorialmod.TutorialMod;
+import net.ij.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -21,6 +22,17 @@ public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
+
+    // Instead of calling for a regular Item like the other methods, this method calls for the custom MetalDetectorItem
+    // This is a special item with custom functionality.
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+
+    // This item is a food. It has been defined as such in the ModFoodComponents class,
+    // and the game will use the values in the class.
+    public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings()
+            .food(ModFoodComponents.TOMATO)));
 
     /*
       Add items to a vanilla creative tab (PART 1).
